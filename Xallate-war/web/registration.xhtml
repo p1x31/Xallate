@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <meta charset="utf-8"/>
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+    <title></title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link href="style.css" rel="stylesheet"/>
+</h:head>
+<h:body>
+    <f:view>
+        <h:form>
+            <h:outputLabel style="font-weight: bolder" for="fn" value="Name: "/>
+            <h:inputText value="${registrationManagedBean.firstName}" id="fn"/>
+            <br/>
+            <h:outputLabel style="font-weight: bolder" for="ln" value="Lastname: "/>
+            <h:inputText value="${registrationManagedBean.lastName}" id="ln"/>
+            <br/>
+            <h:outputLabel style="font-weight: bolder" for="bd" value="Birthday: "/>
+            <h:inputText value="${registrationManagedBean.birthday}" id="bd">
+                <f:convertDateTime dateStyle="short" locale="ru"/>
+            </h:inputText>
+
+            <br/>
+            <h:outputLabel style="font-weight: bolder" for="ht" value="City: "/>
+            <h:inputText value="${registrationManagedBean.homeTown}" id="ht"/>
+            <br/>
+            <h:outputLabel style="font-weight: bolder" for="lng" value="Language: "/>
+            <h:inputText value="${registrationManagedBean.lang}" id="lng"/>
+            <br/>
+            <h:commandButton value="Register" action="${registrationManagedBean.register()}"/>
+        </h:form>
+    </f:view>
+</h:body>
+</html>

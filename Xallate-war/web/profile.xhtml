@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+    <title></title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <link href="style.css" rel="stylesheet"/>
+</h:head>
+<h:body>
+    <f:view>
+
+
+        <div class="wrapper">
+            <header class="header">
+                <div>
+                    Xallate
+                </div>
+            </header><!-- .header-->
+
+            <div class="middle">
+
+                <div class="container">
+                    <main class="content">
+                        <h:form>
+                      <h:outputLabel style="font-weight: bolder" for="fn" value="Name: "/>
+                        <h:outputText value="${profileManagedBean.firstName}" id="fn"/>
+                        <br />
+                        <h:outputLabel style="font-weight: bolder" for="ln" value="Lastname: "/>
+                        <h:outputText value="${profileManagedBean.lastName}" id="ln"/>
+                        <br />
+                        <h:outputLabel style="font-weight: bolder" for="bd" value="Birthday: "/>
+                        <h:outputText value="${profileManagedBean.birthday}" id="bd">
+                            <f:convertDateTime dateStyle="short" locale="ru"/>
+                        </h:outputText>
+                        <br />
+                        <h:outputLabel style="font-weight: bolder" for="ht" value="City: "/>
+                        <h:outputText value="${profileManagedBean.homeTown}" id="ht"/>
+                        <br />
+                        <h:outputLabel style="font-weight: bolder" for="lng" value="Language: "/>
+                        <h:outputText value="${profileManagedBean.lang}" id="lng"/>
+                        <br />
+                        </h:form>
+                    </main><!-- .content -->
+                </div><!-- .container-->
+
+                <aside class="left-sidebar">
+                    <h:form>
+                        <h:commandLink value="Friends" action="friends"/>
+                        <br/>
+                        <h:commandLink value="News" action="news"/>
+
+                    </h:form></aside><!-- .left-sidebar -->
+
+            </div><!-- .middle-->
+
+        </div><!-- .wrapper -->
+
+        <footer class="footer">
+            <div>
+                Vadim Makarenkov © 2016
+            </div>
+        </footer><!-- .footer -->
+
+
+    </f:view>
+</h:body>
+<f:view>
+    <h:outputLabel value="Hello, world"/>
+</f:view>
+</html>
