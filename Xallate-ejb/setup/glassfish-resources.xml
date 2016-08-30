@@ -9,7 +9,7 @@
     <property name="portNumber" value="3306"/>
     <property name="databaseName" value="XALLATE_DB"/>
     
-    <property name="URL" value="jdbc:mysql://localhost:3306/xallate_db?zeroDateTimeBehavior=convertToNull"/>
+    <property name="URL" value="jdbc:mysql://localhost:3306/xallate_db?zeroDateTimeBehavior=convertToNull&amp;useUnicode=true&amp;characterEncoding=utf8"/>
     <property name="User" value="root"/>
     <property name="Password" value="admin"/>
       <property name="driverClass" value="com.mysql.jdbc.Driver"/>
