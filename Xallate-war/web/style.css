@@ -73,6 +73,8 @@ body {
 	background: rgb(43,122,88);
 	color: white;
 	font-size: large;
+        border: 1px solid rgb(43,122,88);
+        border-radius: 0 0 10px 10px;
 }
 .header div{
 	padding-top: 1%;
@@ -121,6 +123,7 @@ body {
 	color: white;
 	position: relative;
 	font-size: small;
+        border-radius: 10px 10px 0 0;
 }
 
 .footer div{
