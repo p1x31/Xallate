@@ -12,8 +12,9 @@ import javax.ejb.EJB;
 @RequestScoped
 public class RegistrationManagedBean {
 
-   // @EJB
-   // private RegistrationSessionBeanLocal registrationSessionBean;
+    @EJB
+    private RegistrationSessionBeanLocal registrationSessionBean;
+    
     public RegistrationManagedBean(){
     }
 
@@ -64,8 +65,8 @@ public class RegistrationManagedBean {
     }
 
     public String register(){
-        //XallateUser user = new XallateUser(firstName, lastName, birthday, homeTown, lang);
-        //registrationSessionBean.register(user);
+        XallateUser user = new XallateUser(firstName, lastName, birthday, homeTown, lang);
+        registrationSessionBean.register(user);
         return "profile";
     }
 }
