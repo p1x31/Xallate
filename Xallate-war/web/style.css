@@ -12,121 +12,173 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
-	font-family: Tahoma,Arial,Verdana,sans-serif,"Lucida Sans";
+    line-height: 1;
+    font-family: Tahoma,Arial,Verdana,sans-serif,"Lucida Sans";
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 /* End of Eric Meyer's CSS Reset */
 
 html {
-	height: 100%;
+    height: 100%;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-	display: block;
+    display: block;
 }
 body {
-	font: 12px/18px Arial, sans-serif;
-	width: 100%;
-	height: 100%;
-
+    font: 12px/18px Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    background: white; 
+    font-family: Verdana, Roboto,"Open Sans",-apple-system,BlinkMacSystemFont,Helvetica Neue,sans-serif; 
+    font-weight: 500 !important; 
+    font-size: 18px; 
+    line-height: 1.5em !important; 
+    -webkit-font-smoothing: none !important;
 }
+body div{ 
+    line-height: 1.5em !important; 
+    -webkit-font-smoothing: none !important; 
+} 
+.page_block { 
+    position: relative; 
+    background: #fff; 
+    border-radius: 0px; 
+    box-shadow: 0 0 0 1px #eee; 
+}
+#ads_left{ 
+    display:none; 
+} 
+h1, h2, h3, h4, h5, .page_media_link_title{ 
+    color: #000; 
+    font-weight:700 !important; 
+} 
+a, #side_bar ol li .left_row,.post_author .author, .wall_module .author, .wall_module .copy_author, .author { 
+    color: #00468c; 
+    font-weight: 600 !important; 
+} 
+.top_profile_name { 
+    vertical-align: middle;
+} 
+.profile_content .page_avatar { 
+    max-height: 350px; 
+    margin-top: 18px;
+}
+
+
 .wrapper {
-	width: 800px;
-	margin: 0 auto;
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
+    width: 800px;
+    margin: 0 auto;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
 }
-
-
+.wrapper a{
+    display: inline-block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    margin-top: 18px;
+    margin-bottom: -44px;
+    font: 12px/18px Tahoma, sans-serif;
+    color: rgb(43,122,88);
+    font-size: 17px;
+    font-weight: 200 !important;
+}
+.wrapper a:hover{
+    background-color: rgba(102,205,170,0.2);
+    padding: 0px 0px 0px 0px;
+    margin-left:0px;
+}
 /* Header
 -----------------------------------------------------------------------------*/
 .header {
-	height: 40px;
-	background: rgb(43,122,88);
-	color: white;
-	font-size: large;
-        border: 1px solid rgb(43,122,88);
-        border-radius: 0 0 10px 10px;
+    height: 40px;
+    background: rgb(43,122,88);
+    color: white;
+    font-size: large;
+    border: 1px solid rgb(43,122,88);
+    border-radius: 0 0 10px 10px;
 }
 .header div{
-	padding-top: 1%;
+    padding-top: 1%;
 }
 
 
 /* Middle
 -----------------------------------------------------------------------------*/
 .middle {
-	width: 100%;
-	padding: 0 0 50px;
-	position: relative;
+    width: 100%;
+    padding: 0 0 50px;
+    position: relative;
 }
 .middle:after {
-	display: table;
-	clear: both;
-	content: '';
+    display: table;
+    clear: both;
+    content: '';
 }
 .container {
-	width: 100%;
-	float: left;
-	overflow: hidden;
+    width: 100%;
+    float: left;
+    overflow: hidden;
 }
 .content {
-	padding: 0 0 0 120px;
+    padding: 0 0 0 120px;
+    margin-top: 18px;
 }
 
 
 /* Left Sidebar
 -----------------------------------------------------------------------------*/
 .left-sidebar {
-	float: left;
-	width: 100px;
-	margin-left: -100%;
-	position: relative;
+    float: left;
+    width: 100px;
+    margin-left: -100%;
+    position: relative;
 }
-
 
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-	width: 800px;
-	margin: -50px auto 0;
-	height: 50px;
-	background: rgb(43,122,88);
-	color: white;
-	position: relative;
-	font-size: small;
-        border-radius: 10px 10px 0 0;
+    width: 800px;
+    margin: -50px auto 0;
+    height: 50px;
+    background: rgb(43,122,88);
+    color: white;
+    position: relative;
+    font-size: small;
+    border-radius: 10px 10px 0 0;
 }
 
 .footer div{
-	text-align: center;
-	padding-top: 10px;
+    text-align: center;
+    padding-top: 10px;
 }
